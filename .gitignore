@@ -1,0 +1,12 @@
+# Bytecode
+*.pyc
+*.pyo
+
+# All the different envs
+.venv
+.env
+venv
+env
+
+# The instance folder
+/instance/
