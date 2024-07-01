@@ -26,5 +26,8 @@ def create_app(test_config=None) -> Flask:
         os.makedirs(app.instance_path)
     except OSError:
         pass
+    
+    from . import index
+    app.register_blueprint(index.bp)
 
     return app

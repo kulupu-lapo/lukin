@@ -1,18 +1,24 @@
-main {
+body > main {
     width: 100%;
-    max-width: 1200px;
+    max-width: 960px;
 
     min-height: 100vh;
 
     margin: 3em auto;
 }
 
+nav input {
+    width: max-content;
+}
+
+main article {
+    padding: 0 1em 1em;
+}
 
 footer div {
     text-align: center;
     padding: 0 20px;
 
-    background: #fff;
     box-shadow: 0 0 .2em rgba(170,170,170,.2);
     transition: all .3s;
 }
