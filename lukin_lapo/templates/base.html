@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='picnic.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+        <title>lukin lapo - {% block tittle %}{% endblock %}</title>
+    </head>
+    <body>
+        <nav>
+            <a href="/" class="brand">
+            <span>lukin lapo</span>
+            </a>
+        
+        
+            <div class="menu">
+                <input type="search" placeholder="alasa e ijo...">
+            </div>
+        </nav>
+
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+
+        <footer>
+            <div class="flex three">
+                <p>
+                    linja tawa lipu mi: <br>
+                    <a href="#">lipu tomo mi</a> <br>
+                    <a href="https://github.com/nikolas-lehto/">lipu Github </a> <br>
+                    <a href="https://discord.com/users/883467091133489193"> lipu Discord</a>
+                </p>
+
+                <p>
+                    mi pilin pona tawa sina tan ni: sina kepeken e lukin lapo. ❤️
+                    mi pana e sitelen ilo pi lukin lapo kepeken <a href="https://raw.githubusercontent.com/kulupu-pi-ilo-pona/lukin-lapo/main/LICENSE">lawa nasin MIT.</a>
+                    ni lon e lipu Github <a href="https://github.com/kulupu-pi-ilo-pona/lukin-lapo/">ni.</a>
+                    <br>
+                    <br>
+                    mi pali e lipu ni kepeken
+                    <a href="https://picnicss.com/">lipu Picnic CSS</a>, kepeken
+                    <a href="https://palletsprojects.com/p/flask/">ilo Flask</a>, kepeken
+                    <a href="https://htmx.org">toki ilo HTMX.</a>
+                    ni jo e sona ni tan <a href="https://github.com/AcipenserSturio/poki-lapo">poki lapo</a> kepeken <a href="https://docs.github.com/en/rest?apiVersion=2022-11-28">Github REST API</a>
+                </p>
+
+                <p>
+                    sona pi toki pona: <br>
+                    <a href="https://tokipona.org/">lipu tomo pi toki pona</a> <br>
+                    <a href="https://discord.gg/nbgXCC6">ma pona pi toki pona</a> <br>
+                    <a href="https://pona.la/">lipu pona.la</a> <br>
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
